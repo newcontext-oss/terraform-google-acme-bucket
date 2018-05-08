@@ -13,6 +13,8 @@ resource "google_storage_bucket" "state_bucket" {
   labels {
     name = "state-bucket"
   }
+
+  force_destroy = true
 }
 
 resource "google_storage_bucket_acl" "state_bucket_acl" {
