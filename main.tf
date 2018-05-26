@@ -1,7 +1,3 @@
-provider "google" {
-  version = "~> 1.0"                                                                                                         
-}
-
 resource "google_storage_bucket" "state_bucket" {
   name     = "${var.bucket_name}"
   location = "us-west1"
@@ -18,6 +14,6 @@ resource "google_storage_bucket" "state_bucket" {
 }
 
 resource "google_storage_bucket_acl" "state_bucket_acl" {
-  bucket = "${google_storage_bucket.state_bucket.name}"
+  bucket         = "${google_storage_bucket.state_bucket.name}"
   predefined_acl = "private"
 }
