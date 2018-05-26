@@ -10,7 +10,7 @@ Call it as a module from another Terraform repository.
 
 ```sh
 module "bucket" {
-  source = "tf_module_gcloud_buket"_
+  source = "tf_module_gcloud_bucket"
 
   bucket_name = "Your bucket name"
 }
