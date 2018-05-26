@@ -17,8 +17,6 @@ verifier:
   name: terraform
   groups:
     - name: storage
-      controls:
-        - bucket
 
 platforms:
   - name: terraform
