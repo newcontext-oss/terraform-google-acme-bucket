@@ -1,4 +1,4 @@
-# tf_module_glcoud_bucket
+# terraform-google-acme-bucket
 
 Terraform module for building out storage bucket on Google Cloud Services
 
@@ -10,7 +10,7 @@ Call it as a module from another Terraform repository.
 
 ```sh
 module "bucket" {
-  source = "tf_module_gcloud_bucket"
+  source = "terraform-google-acme-bucket"
 
   bucket_name = "Your bucket name"
 }
